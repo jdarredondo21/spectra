@@ -1,57 +1,7 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<title>Spectra | Blog Interna</title>
-<link rel="icon" href="">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="css/bootstrap-grid.min.css" rel="stylesheet">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
-<body>
-  <header>
-    <nav id="navbar">
-      <ul class="menu" id="menu-items"><img class="logo-mobile" src="assets/img/logo-mobile.svg" alt="Logo"><img class="before-mobile" src="assets/img/before-menu-mobile.png">
-        <li><a class="active" href="#">Nosotros</a></li>
-        <li class="has-submenu"><a class="toggle-submenu" href="#">Productos</a>
-          <ul class="submenu">
-            <li> <a href="#">Automóvil</a></li>
-            <li> <a href="#">Decorativas</a></li>
-            <li> <a href="#">Arquitectónica</a></li>
-            <li> <a href="#">Seguridad</a></li>
-            <li> <a href="#">Simulador 360</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Distribuidores</a></li>
-        <li><a href="#">Blog </a></li>
-        <li class="has-submenu"><a class="toggle-submenu" href="#">Centro de experiencia </a>
-          <ul class="submenu">
-            <li> <a href="#">Para distribuidores</a></li>
-            <li> <a href="#">Para cliente final</a></li>
-          </ul>
-        </li><a class="button-red" href="">Contáctanos<img alt="Icono" src="assets/img/dot-right.svg"></a>
-        <div class="socials-mobile">
-          <ul> 
-            <li> <a href=""><img alt="" src="assets/img/linkedin-footer.svg"></a></li>
-            <li> <a href=""><img alt="" src="assets/img/instagram-footer.svg"></a></li>
-            <li> <a href=""><img alt="" src="assets/img/facebook-footer.svg"></a></li>
-          </ul>
-        </div><img class="close-button" id="close-button" src="assets/img/close-button.svg">
-      </ul>
-      <div class="logo"><a href=""><img src="assets/img/logo-header.svg" alt="Logo"></a>
-        <div class="before-logo"> <img src="assets/img/before-logo.svg" alt="Logo"></div>
-      </div>
-      <div class="content-button"><a class="button-red" href="">Contáctanos<img alt="Icono" src="assets/img/dot-right.svg"></a>
-        <button class="menu-button" id="menu-button"><img alt="Icono" src="assets/img/menu-hamburguesa.svg"></button>
-      </div>
-    </nav>
-  </header>
-  <section class="banner-distributor" style="background-image: url(&quot;assets/img/banner-distribuidores.png&quot;)">
+<?php 
+/** Template Name: Distribuidores */ 
+get_header(); ?>
+<section class="banner-distributor" style="background-image: url(&quot;<?php bloginfo('template_url') ?>/assets/img/banner-distribuidores.png&quot;)">
     <div class="container-fluid">
       <div class="row"> 
         <div class="col-md-8 offset-md-2">
@@ -75,7 +25,7 @@
               <div class="accordion-item">
                 <div class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <div class="image-accordion"><img src="assets/img/bogota-distribuidor.png"></div>
+                    <div class="image-accordion"><img src="<?php bloginfo('template_url') ?>/assets/img/bogota-distribuidor.png"></div>
                     <div class="text-accordion"> 
                       <p>Bogotá, Colombia</p><span>5 empresas</span>
                     </div>
@@ -108,7 +58,7 @@
               <div class="accordion-item">
                 <div class="accordion-header" id="headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <div class="image-accordion"><img src="assets/img/medellin-distribuidor.png"></div>
+                    <div class="image-accordion"><img src="<?php bloginfo('template_url') ?>/assets/img/medellin-distribuidor.png"></div>
                     <div class="text-accordion"> 
                       <p>Medellín, Colombia</p><span>4 empresas</span>
                     </div>
@@ -138,7 +88,7 @@
               <div class="accordion-item">
                 <div class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <div class="image-accordion"><img src="assets/img/cali-distribuidor.png"></div>
+                    <div class="image-accordion"><img src="<?php bloginfo('template_url') ?>/assets/img/cali-distribuidor.png"></div>
                     <div class="text-accordion"> 
                       <p>Cali, Colombia</p><span>2 empresas</span>
                     </div>
@@ -162,7 +112,7 @@
               <div class="accordion-item">
                 <div class="accordion-header" id="headingFour">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <div class="image-accordion"><img src="assets/img/barranquilla-distribuidor.png"></div>
+                    <div class="image-accordion"><img src="<?php bloginfo('template_url') ?>/assets/img/barranquilla-distribuidor.png"></div>
                     <div class="text-accordion"> 
                       <p>Barranquilla, Colombia</p><span>5 empresas</span>
                     </div>
@@ -195,7 +145,7 @@
               <div class="accordion-item">
                 <div class="accordion-header" id="headingFive">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    <div class="image-accordion"><img src="assets/img/bucaramanga-distribuidor.png"></div>
+                    <div class="image-accordion"><img src="<?php bloginfo('template_url') ?>/assets/img/bucaramanga-distribuidor.png"></div>
                     <div class="text-accordion"> 
                       <p>Bucaramanga, Colombia</p><span>5 empresas</span>
                     </div>
@@ -228,7 +178,7 @@
               <div class="accordion-item">
                 <div class="accordion-header" id="headingSix">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    <div class="image-accordion"><img src="assets/img/armenia-distribuidor.png"></div>
+                    <div class="image-accordion"><img src="<?php bloginfo('template_url') ?>/assets/img/armenia-distribuidor.png"></div>
                     <div class="text-accordion"> 
                       <p>Armenia, Colombia</p><span>2 empresas</span>
                     </div>
@@ -252,7 +202,7 @@
               <div class="accordion-item">
                 <div class="accordion-header" id="headingSeven">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    <div class="image-accordion"><img src="assets/img/cartagena-distribuidor.png"></div>
+                    <div class="image-accordion"><img src="<?php bloginfo('template_url') ?>/assets/img/cartagena-distribuidor.png"></div>
                     <div class="text-accordion"> 
                       <p>Cartagena, Colombia</p><span>1 empresa</span>
                     </div>
@@ -273,7 +223,7 @@
               <div class="accordion-item">
                 <div class="accordion-header" id="headingEight">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                    <div class="image-accordion"><img src="assets/img/costarica-distribuidor.png"></div>
+                    <div class="image-accordion"><img src="<?php bloginfo('template_url') ?>/assets/img/costarica-distribuidor.png"></div>
                     <div class="text-accordion"> 
                       <p>Costa Rica</p><span>1 empresa</span>
                     </div>
@@ -295,84 +245,4 @@
       </div>
     </div>
   </section>
-  <div class="footer">
-    <div class="background-footer"> <img class="desktop" alt="Fondo footer" src="assets/img/fondo-footer.png"><img class="mobile" alt="Fondo footer" src="assets/img/fondo-footer-mobile.png"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="image-footer"><img alt="Logo" src="assets/img/logo-footer.svg"><a class="button-white" href="">Cotiza tu proyecto<img alt="Icono" src="assets/img/dot-right.svg"></a>
-                <div class="list-social"> 
-                  <ul> 
-                    <li> <a href=""><img alt="" src="assets/img/linkedin-footer.svg"></a></li>
-                    <li> <a href=""><img alt="" src="assets/img/instagram-footer.svg"></a></li>
-                    <li> <a href=""><img alt="" src="assets/img/facebook-footer.svg"></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="links-footer">
-                <p>Productos</p>
-                <ul>
-                  <li><a class="navigation-link" href="#">Oficina</a></li>
-                  <li><a class="navigation-link" href="#">Automóvil </a></li>
-                  <li><a class="navigation-link" href="#">Casa</a></li>
-                  <li><a class="navigation-link" href="#">Decorativo</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="links-footer">
-                <p>Explorar</p>
-                <ul>
-                  <li><a class="navigation-link" href="#">Nosotros</a></li>
-                  <li><a class="navigation-link" href="#">Simulador 360</a></li>
-                  <li><a class="navigation-link" href="#">Distribuidores</a></li>
-                  <li><a class="navigation-link" href="#">Contacto</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="links-footer">
-                <p>Info. contacto</p>
-                <ul>
-                  <li><a class="navigation-link" href="#">Info@spectrasupport.com</a></li>
-                  <li><a class="navigation-link" href="#">+57 355 688 6568</a></li>
-                  <li><a class="navigation-link" href="#">Bogotá, Colombia</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12"> 
-          <div class="content-social">
-            <div class="row">
-              <div class="col-md-6"> 
-                <div class="list-social"> 
-                  <ul> 
-                    <li> <a href=""><img alt="" src="assets/img/linkedin-footer.svg"></a></li>
-                    <li> <a href=""><img alt="" src="assets/img/instagram-footer.svg"></a></li>
-                    <li> <a href=""><img alt="" src="assets/img/facebook-footer.svg"></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-6"> 
-                <div class="text-social"> 
-                  <p>Spectra - American Window Film    Todos los derechos reservados - 2024</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+<?php get_footer() ?>

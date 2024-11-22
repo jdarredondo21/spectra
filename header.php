@@ -13,11 +13,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet">
 <link href="<?php bloginfo('template_url') ?>/css/main.css" rel="stylesheet">
+
 <body>
   <header>
     <nav id="navbar">
       <ul class="menu" id="menu-items"><img class="logo-mobile" src="<?php bloginfo('template_url') ?>/assets/img/logo-mobile.svg" alt="Logo"><img class="before-mobile" src="<?php bloginfo('template_url') ?>/assets/img/before-menu-mobile.png">
-        <li><a class="active" href="#">Nosotros</a></li>
+        <li><a class="" href="#">Nosotros</a></li>
         <li class="has-submenu"><a class="toggle-submenu" href="#">Productos</a>
           <ul class="submenu">
             <li> <a href="#">Automóvil</a></li>
@@ -27,8 +28,12 @@
             <li> <a href="#">Simulador 360</a></li>
           </ul>
         </li>
-        <li><a href="<?=  get_permalink(11) ?>">Distribuidores</a></li>
-        <li><a href="<?= get_permalink( get_option( 'page_for_posts' ) ); ?>">Blog </a></li>
+        <li>
+          <a href="<?= get_permalink(11); ?>" class="<?= (is_page(11)) ? 'active' : ''; ?>">Distribuidores</a>
+        </li>
+        <li>
+          <a href="<?= get_permalink(get_option('page_for_posts')); ?>" class="<?= (is_home() || is_single()) ? 'active' : ''; ?>">Blog</a>
+        </li>
         <li class="has-submenu"><a class="toggle-submenu" href="#">Centro de experiencia </a>
           <ul class="submenu">
             <li> <a href="#">Para distribuidores</a></li>
@@ -36,7 +41,7 @@
           </ul>
         </li><a class="button-red" href="">Contáctanos<img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a>
         <div class="socials-mobile">
-          <ul> 
+          <ul>
             <li> <a href=""><img alt="" src="<?php bloginfo('template_url') ?>/assets/img/linkedin-footer.svg"></a></li>
             <li> <a href=""><img alt="" src="<?php bloginfo('template_url') ?>/assets/img/instagram-footer.svg"></a></li>
             <li> <a href=""><img alt="" src="<?php bloginfo('template_url') ?>/assets/img/facebook-footer.svg"></a></li>

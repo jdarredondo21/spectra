@@ -76,6 +76,7 @@
   </div>
   <script src="<?php bloginfo('template_url') ?>/js/bootstrap.min.js"></script>
   <script src="<?php bloginfo('template_url') ?>/js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/parvus@2.3.3/dist/js/parvus.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="<?php bloginfo('template_url') ?>/js/main.js"></script>
 </body>

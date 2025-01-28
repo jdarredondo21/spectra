@@ -118,43 +118,61 @@
     </div>
   </div>
 </section>
+
+<?php
+$imagen_card1 = get_field('imagen_card1'); 
+$titulo_card1 = get_field('titulo_card1'); 
+$descripcion_card1 = get_field('descripcion_card1'); 
+$url_card1 = get_field('url_card1'); 
+$imagen_card2 = get_field('imagen_card2');
+$titulo_card2 = get_field('titulo_card2');
+$descripcion_card2 = get_field('descripcion_card2');
+$url_card2 = get_field('url_card2');
+$imagen_card3 = get_field('imagen_card3');
+$titulo_card3 = get_field('titulo_card3');
+$descripcion_card3 = get_field('descripcion_card3');
+$url_card3 = get_field('url_card3');
+
+
+?>
+
 <section class="cards-general">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-        <div class="item-card"><img alt="Visualizador" src="<?php bloginfo('template_url') ?>/assets/img/visualizador.png">
+        <div class="item-card"><img alt="Visualizador" src="<?= $imagen_card1 ?>">
           <div class="text-card">
-            <h4>Visualizador</h4>
+            <h4><?= $titulo_card1 ?></h4>
             <div class="divide">
-              <p>¿Quieres saber como se verá la película? ingresa a nuestro visualizador y encuentra la mejor opción para ti.</p>
+              <p><?= $descripcion_card1 ?></p>
               <div>
-                <div class="button-card"><a href=""><img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a></div>
+                <div class="button-card"><a href="<?= $url_card1 ?>"><img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a></div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="item-card"><img alt="Distribuidor" src="<?php bloginfo('template_url') ?>/assets/img/distribuidor.png">
+        <div class="item-card"><img alt="Distribuidor" src="<?= $imagen_card2 ?>">
           <div class="text-card">
-            <h4>Conviértete En Distribuidor</h4>
+            <h4><?= $titulo_card2 ?></h4>
             <div class="divide">
-              <p>Pregunta por nuestro programa de distribuidores y empieza tu crecimiento comercial con SPECTRA.</p>
+              <p><?= $descripcion_card2 ?></p>
               <div>
-                <div class="button-card"><a href=""><img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a></div>
+                <div class="button-card"><a href="<?= $url_card2 ?>"><img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a></div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="item-card"><img alt="Cotizador" src="<?php bloginfo('template_url') ?>/assets/img/cotizador.png">
+        <div class="item-card"><img alt="Cotizador" src="<?= $imagen_card3 ?>">
           <div class="text-card">
-            <h4>Cotizador</h4>
+            <h4><?= $titulo_card3 ?></h4>
             <div class="divide">
-              <p>¡Ingresa ya las medidas de tu proyecto y obten una cotización ahora!</p>
+              <p><?= $descripcion_card3 ?></p>
               <div>
-                <div class="button-card"><a href=""><img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a></div>
+                <div class="button-card"><a href="<?= $url_card3 ?>"><img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a></div>
               </div>
             </div>
           </div>
@@ -211,12 +229,12 @@
           <div class="row">
             <div class="col-md-6">
               <div class="tittle-become">
-                <h2><?= get_field('titulo_convertirse');?></h2>
+                <h2><?= get_field('titulo_convertirse'); ?></h2>
               </div>
             </div>
             <div class="col-md-6">
               <div class="text-become">
-                <p><?= get_field('parrafo_convertirse');?></p><a class="button-transparent" href="">Ser distribuidor<img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a>
+                <p><?= get_field('parrafo_convertirse'); ?></p><a class="button-transparent" href="">Ser distribuidor<img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a>
               </div>
             </div>
           </div>

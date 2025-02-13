@@ -15,10 +15,10 @@
                   </h2>
                   <p><?php echo get_field('descripcion'); ?></p>
                   <div class="content-buttons">
-                    <a class="button-red" href="">Contáctanos
+                    <a class="button-red" href="<?php echo get_field('url_1'); ?>">Contáctanos
                       <img alt="Icono" src="<?php bloginfo('template_url'); ?>/assets/img/dot-right.svg">
                     </a>
-                    <a class="button-transparent" href="">Ser distribuidor
+                    <a class="button-transparent" href="<?php echo get_field('url_2'); ?>">Ser distribuidor
                       <img alt="Icono" src="<?php bloginfo('template_url'); ?>/assets/img/dot-right.svg">
                     </a>
                   </div>
@@ -234,7 +234,7 @@ $url_card3 = get_field('url_card3');
             </div>
             <div class="col-md-6">
               <div class="text-become">
-                <p><?= get_field('parrafo_convertirse'); ?></p><a class="button-transparent" href="">Ser distribuidor<img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a>
+                <p><?= get_field('parrafo_convertirse'); ?></p><a class="button-transparent" href="<?php echo get_field('url_3'); ?>">Ser distribuidor<img alt="Icono" src="<?php bloginfo('template_url') ?>/assets/img/dot-right.svg"></a>
               </div>
             </div>
           </div>
